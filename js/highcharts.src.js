@@ -3353,6 +3353,7 @@ VMLRenderer.prototype = merge( SVGRenderer.prototype, { // inherit SVGRenderer
 		renderer.alignedObjects = [];
 		
 		boxWrapper = renderer.createElement(DIV);
+		boxWrapper.element.style['position'] = RELATIVE;
 		container.appendChild(boxWrapper.element);
 		
 		
